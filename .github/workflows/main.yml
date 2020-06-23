@@ -15,6 +15,6 @@ jobs:
       with:
         username: hugodelahousse
         password: ${{ secrets.GITHUB_TOKEN }}
-        repository: website-identity/app
+        repository: website-identity/website-identity
         registry: docker.pkg.github.com/hugodelahousse
         tags: latest
