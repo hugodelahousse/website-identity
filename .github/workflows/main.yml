@@ -13,5 +13,8 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v1.1.0
       with:
-        repository: hugodelahousse/website-identity
+        username: hugodelahousse
+        password: ${{ secrets.GITHUB_TOKEN }}
+        repository: website-identity/app
+        registry: docker.pkg.github.com/hugodelahousse
         tags: latest
